@@ -27,9 +27,13 @@ public class Main {
             else if (action == MenuService.DELETE_ANIMAL) {
                         menu.deleteAnimal(service);
             }
+            else if (action < 1 || action > 6) {
+                System.out.println("\nPlease input a valid menu option (1 - 6)");
+            }
             else if (action == MenuService.QUIT) {
                         repeat = menu.quit(service);
             }
+
         }
     }
 }

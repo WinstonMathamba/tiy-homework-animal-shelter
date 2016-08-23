@@ -1,11 +1,10 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- * Created by win808mac on 8/19/16.
- */
 
-/** his class' responsibility is displaying menus, prompting the user for input, and returning the results.*/
+/**
+ * This class' responsibility is displaying menus, prompting the user for input, and returning the results.
+ */
 
 public class MenuService {
 
@@ -45,10 +44,6 @@ public class MenuService {
 
             value = waitForInt(message);
         }
-        if (value <= 0 || value > 6) {
-            System.out.println("\nError: Sorry, that isn't a valid option.");
-            System.out.println("Please choose options 1-6");
-        }
 
         return value;
 
@@ -58,14 +53,15 @@ public class MenuService {
         ArrayList<Animal> animals = service.listAnimals();
 
         if ((animals.size()) == (0)) {
-            System.out.println("Nothing like an animal yet. Try again!!");
+            System.out.println("No animals exist yet. Try creating an animal first (menu opt 2)!");
         } else {
-            System.out.println("--List of Animals--");
-
+            System.out.println("\n--List of Animals--");
+            int x = 1;
             for (Animal anAnimal : animals) {
                 String name = anAnimal.getName();
                 String species = anAnimal.getSpecies();
-                System.out.printf("%s \t %s\n", name, species);
+                System.out.printf("%s) %s \t %s\n", x, name, species);
+                x++;
 
             }
 
@@ -79,23 +75,39 @@ public class MenuService {
 
         ArrayList<Animal> animals = service.listAnimals();
         String name, species, breed, description;
+        String create;
 
-        System.out.println("--Create an Animal--");
+        System.out.println("\n--Create an Animal--");
         System.out.println("\n Please fill in the blanks.");
 
-        System.out.println("\n Animal name: ");
+        System.out.println("\nAnimal name: ");
         name = scanner.nextLine();
-
-        System.out.println("Species: ");
+        while (name.isEmpty() || name.equals(" ")) {
+            System.out.println("\nName field is required. Try Again!\n");
+            System.out.println("\n Animal name: ");
+            name = scanner.nextLine();
+        }
+        System.out.println("\nSpecies: ");
         species = scanner.nextLine();
-
-        System.out.println("Breed(optional): ");
+        while (species.isEmpty()) {
+            System.out.println("\nSpecies field is required. Try Again!\n");
+            System.out.println("Species: ");
+            species = scanner.nextLine();
+        }
+        System.out.println("\nBreed(optional): ");
         breed = scanner.nextLine();
 
-        System.out.println("Description: ");
+        System.out.println("\nDescription: ");
         description = scanner.nextLine();
+        while (description.isEmpty()) {
+            System.out.println("\nDescription field is required. Try Again!\n");
+            System.out.println("Description: ");
+            description = scanner.nextLine();
+        }
 
         service.createAnimal(name, species, breed, description);
+
+        System.out.printf("\nSuccess! you added %s to the list of animals.\n", name);
 
 
     }
@@ -106,7 +118,7 @@ public class MenuService {
         ArrayList<Animal> animals = service.listAnimals();
         if ((option <= animals.size() - 1) && option >= 0) {
 
-            System.out.println("\n Name: " + animals.get(option).getName());
+            System.out.println("\nName: " + animals.get(option).getName());
             System.out.println("Species: " + animals.get(option).getSpecies());
             System.out.println("Breed: " + animals.get(option).getBreed());
             System.out.println("Description: " + animals.get(option).getDescription());
@@ -121,7 +133,7 @@ public class MenuService {
         ArrayList<Animal> animals = service.listAnimals();
         if ((option <= animals.size() - 1) && option >= 0) {
 
-            System.out.println("\n Name: " + animals.get(option).getName());
+            System.out.println("\nName: " + animals.get(option).getName());
             animals.get(option).setName(scanner.nextLine());
             System.out.println("Species: " + animals.get(option).getSpecies());
             animals.get(option).setName(scanner.nextLine());
@@ -140,7 +152,7 @@ public class MenuService {
         ArrayList<Animal> animals = service.listAnimals();
         if ((option <= animals.size() - 1) && option >= 0) {
 
-            System.out.println("\n Name: " + animals.get(option).getName());
+            System.out.println("\nName: " + animals.get(option).getName());
             System.out.println("Species: " + animals.get(option).getSpecies());
             System.out.println("Breed: " + animals.get(option).getBreed());
             System.out.println("Description: " + animals.get(option).getDescription());
@@ -153,9 +165,7 @@ public class MenuService {
                 deleteAnimal(service);
             }
 
-        }
-        else
-        {
+        } else {
             System.out.println("Hey! You don't have enough animals in your list. Try again!");
             deleteAnimal(service);
         }
@@ -167,7 +177,7 @@ public class MenuService {
         System.out.println("If you choose 'yes', all of your data will be lost!");
         String input = scanner.nextLine();
         if (input.equalsIgnoreCase("yes")) {
-            System.out.println(" See ya");
+            System.out.println("\nThank You. Goodbye!");
             return false;
         } else if (input.equalsIgnoreCase("no")) {
             return true;
