@@ -85,7 +85,7 @@ public class MenuService {
         }
         System.out.println("\nSpecies: ");
         species = scanner.nextLine().trim();
-        while (species.isEmpty()) {
+        while (species.isEmpty()|| name.equals("")) {
             System.out.println("\nUh,Oh! Species field is required. Try Again!\n");
             System.out.println("Species: ");
             species = scanner.nextLine().trim();
@@ -95,7 +95,7 @@ public class MenuService {
 
         System.out.println("\nDescription: ");
         description = scanner.nextLine().trim();
-        while (description.isEmpty()) {
+        while (description.isEmpty()|| name.equals("")) {
             System.out.println("\nUh,Oh! Description field is required. Try Again!\n");
             System.out.println("Description: ");
             description = scanner.nextLine().trim();
@@ -130,19 +130,29 @@ public class MenuService {
         System.out.println("--Edit Animal--\n");
         int option = waitForInt("What is the numeric value of the animal you'd like to edit") - 1;
         ArrayList<Animal> animals = service.listAnimals();
-
         int endOfList = animals.size();
 
         if ((option <= animals.size() - 1) && option >= 0) {
-
             System.out.println("\nName: [" + animals.get(option).getName() +"]");
-            animals.get(option).setName(scanner.nextLine());
+            String name = scanner.nextLine().trim();
+            if(!name.isEmpty()) {
+                animals.get(option).setName(name);
+            }
             System.out.println("Species: [" + animals.get(option).getSpecies()+"]");
-            animals.get(option).setSpecies(scanner.nextLine());
+            String species = scanner.nextLine().trim();
+            if(!species.isEmpty()) {
+                animals.get(option).setSpecies(species);
+            }
             System.out.println("Breed: [" + animals.get(option).getBreed()+"]");
-            animals.get(option).setBreed(scanner.nextLine());
+            String breed = scanner.nextLine().trim();
+            if(!breed.isEmpty()) {
+                animals.get(option).setBreed(breed);
+            }
             System.out.println("Description: [" + animals.get(option).getDescription()+"]");
-            animals.get(option).setDescription(scanner.nextLine());
+            String description = scanner.nextLine().trim();
+            if(!description.isEmpty()) {
+                animals.get(option).setDescription(description);
+            }
         }
         else if (option < 0 || option > endOfList) {
             System.out.println("Oh Uh! Choose an animal from 1 to " + endOfList + " on the animal list.\n");
@@ -156,23 +166,25 @@ public class MenuService {
         System.out.println("--Delete Animal--\n");
         int option = waitForInt("What is the numeric value of the animal you'd like to delete") - 1;
         ArrayList<Animal> animals = service.listAnimals();
+        int endOfList = animals.size();
         if ((option <= animals.size() - 1) && option >= 0) {
 
             System.out.println("\nName: " + animals.get(option).getName());
             System.out.println("Species: " + animals.get(option).getSpecies());
             System.out.println("Breed: " + animals.get(option).getBreed());
             System.out.println("Description: " + animals.get(option).getDescription());
-            System.out.println("Are you sure?");
+            System.out.println("Are you sure you want to delete "+ animals.get(option).getName() +"? Yes or No");
 
             if (scanner.nextLine().equalsIgnoreCase("yes")) {
-                System.out.println(" Gone");
+                System.out.println("Deleted");
                 service.deleteAnimal(service, option);
             } else if (scanner.nextLine().equalsIgnoreCase("no")) {
                 deleteAnimal(service);
             }
 
-        } else {
-            System.out.println("Hey! You don't have enough animals in your list. Try again!");
+        } else if (option < 0 || option > endOfList) {
+            System.out.println("That's not a valid animal on your list\n");
+            System.out.println ("Select from 1 to " + endOfList + " on the animal list.");
             deleteAnimal(service);
         }
     }
