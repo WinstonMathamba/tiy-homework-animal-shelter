@@ -171,7 +171,7 @@ public class MenuService {
 
             if (scanner.nextLine().equalsIgnoreCase("yes")) {
                 System.out.println("Deleted");
-                service.deleteAnimal(service, option);
+                service.deleteAnimal(option);
             } else if (scanner.nextLine().equalsIgnoreCase("no")) {
                 deleteAnimal(service);
             }

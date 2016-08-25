@@ -23,7 +23,7 @@ public class AnimalsService {
     }
 
     //this method will delete an Animal from the ArrayList 'animalList'.
-    public void deleteAnimal(AnimalsService service, int index) {
+    public void deleteAnimal(int index) {
         animalList.remove(index);
     }
 

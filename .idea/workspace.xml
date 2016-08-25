@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d196da8-b500-47f8-b7ed-a45d8d6e6583" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Animal.java" afterPath="$PROJECT_DIR$/src/Animal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/tiy-homework-animal-shelter/Animal.class" afterPath="$PROJECT_DIR$/out/production/tiy-homework-animal-shelter/Animal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/tiy-homework-animal-shelter/AnimalsService.class" afterPath="$PROJECT_DIR$/out/production/tiy-homework-animal-shelter/AnimalsService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/tiy-homework-animal-shelter/MenuService.class" afterPath="$PROJECT_DIR$/out/production/tiy-homework-animal-shelter/MenuService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AnimalsService.java" afterPath="$PROJECT_DIR$/src/AnimalsService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MenuService.java" afterPath="$PROJECT_DIR$/src/MenuService.java" />
     </list>
@@ -29,7 +32,7 @@
       <file leaf-file-name="Animal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Animal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="-299">
               <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -55,13 +58,13 @@
       <file leaf-file-name="AnimalsService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AnimalsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="e#443#444#0" expanded="true" />
                 <element signature="e#476#477#0" expanded="true" />
-                <element signature="e#964#965#0" expanded="true" />
-                <element signature="e#1004#1005#0" expanded="true" />
+                <element signature="e#940#941#0" expanded="true" />
+                <element signature="e#980#981#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +73,8 @@
       <file leaf-file-name="MenuService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MenuService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2940">
-              <caret line="196" column="20" selection-start-line="196" selection-start-column="20" selection-end-line="196" selection-end-column="20" />
+            <state relative-caret-position="960">
+              <caret line="69" column="48" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,7 +85,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
+            <state relative-caret-position="402">
               <caret line="30" column="81" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
               <folding />
             </state>
@@ -110,8 +113,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/AnimalsService.java" />
         <option value="$PROJECT_DIR$/src/Animal.java" />
+        <option value="$PROJECT_DIR$/src/AnimalsService.java" />
         <option value="$PROJECT_DIR$/src/MenuService.java" />
       </list>
     </option>
@@ -674,12 +677,12 @@
       <option name="presentableId" value="Default" />
       <updated>1471619192270</updated>
       <workItem from="1471619193489" duration="5305000" />
-      <workItem from="1471653505829" duration="52190000" />
+      <workItem from="1471653505829" duration="56160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57495000" />
+    <option name="totallyTimeSpent" value="61465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
@@ -693,7 +696,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22663252" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -767,8 +770,8 @@
           <folding>
             <element signature="e#443#444#0" expanded="true" />
             <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#964#965#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -791,30 +794,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="30" column="81" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
+        <state relative-caret-position="495">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="105" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AnimalsService.java">
+    <entry file="file://$PROJECT_DIR$/src/AnimalRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#964#965#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="-299">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -836,10 +834,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AnimalsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="30" column="81" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MenuService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2940">
-          <caret line="196" column="20" selection-start-line="196" selection-start-column="20" selection-end-line="196" selection-end-column="20" />
+        <state relative-caret-position="960">
+          <caret line="69" column="48" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
