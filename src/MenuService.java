@@ -32,9 +32,7 @@ public class MenuService {
     public static int waitForInt(String message) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(message);
-
         String input = scanner.nextLine();
-
         int value;
         try {
             value = Integer.parseInt(input);
@@ -69,8 +67,6 @@ public class MenuService {
 
     public void createAnimal(AnimalsService service) {
         Scanner scanner = new Scanner(System.in);
-
-        ArrayList<Animal> animals = service.listAnimals();
         String name, species, breed, description;
 
         System.out.println("\n--Create an Animal--");
@@ -85,7 +81,7 @@ public class MenuService {
         }
         System.out.println("\nSpecies: ");
         species = scanner.nextLine().trim();
-        while (species.isEmpty()|| name.equals("")) {
+        while (species.isEmpty() || name.equals("")) {
             System.out.println("\nUh,Oh! Species field is required. Try Again!\n");
             System.out.println("Species: ");
             species = scanner.nextLine().trim();
@@ -95,7 +91,7 @@ public class MenuService {
 
         System.out.println("\nDescription: ");
         description = scanner.nextLine().trim();
-        while (description.isEmpty()|| name.equals("")) {
+        while (description.isEmpty() || name.equals("")) {
             System.out.println("\nUh,Oh! Description field is required. Try Again!\n");
             System.out.println("Description: ");
             description = scanner.nextLine().trim();
@@ -117,8 +113,7 @@ public class MenuService {
             System.out.println("Species: " + animals.get(option).getSpecies());
             System.out.println("Breed: " + animals.get(option).getBreed());
             System.out.println("Description: " + animals.get(option).getDescription());
-        }
-        else if (option < 0 || option > endOfList) {
+        } else if (option < 0 || option > endOfList) {
             System.out.println("Oh Uh! Choose an animal from 1 to " + endOfList + " on the Animal List.\n");
             viewDetails(service);
         }
@@ -133,30 +128,29 @@ public class MenuService {
         int endOfList = animals.size();
 
         if ((option <= animals.size() - 1) && option >= 0) {
-            System.out.println("\nName: [" + animals.get(option).getName() +"]");
+            System.out.println("\nName: [" + animals.get(option).getName() + "]");
             String name = scanner.nextLine().trim();
-            if(!name.isEmpty()) {
+            if (!name.isEmpty()) {
                 animals.get(option).setName(name);
             }
-            System.out.println("Species: [" + animals.get(option).getSpecies()+"]");
+            System.out.println("Species: [" + animals.get(option).getSpecies() + "]");
             String species = scanner.nextLine().trim();
-            if(!species.isEmpty()) {
+            if (!species.isEmpty()) {
                 animals.get(option).setSpecies(species);
             }
-            System.out.println("Breed: [" + animals.get(option).getBreed()+"]");
+            System.out.println("Breed: [" + animals.get(option).getBreed() + "]");
             String breed = scanner.nextLine().trim();
-            if(!breed.isEmpty()) {
+            if (!breed.isEmpty()) {
                 animals.get(option).setBreed(breed);
             }
-            System.out.println("Description: [" + animals.get(option).getDescription()+"]");
+            System.out.println("Description: [" + animals.get(option).getDescription() + "]");
             String description = scanner.nextLine().trim();
-            if(!description.isEmpty()) {
+            if (!description.isEmpty()) {
                 animals.get(option).setDescription(description);
             }
-        }
-        else if (option < 0 || option > endOfList) {
+        } else if (option < 0 || option > endOfList) {
             System.out.println("Oh Uh! Choose an animal from 1 to " + endOfList + " on the animal list.\n");
-         editAnimal(service);
+            editAnimal(service);
         }
     }
 
@@ -173,7 +167,7 @@ public class MenuService {
             System.out.println("Species: " + animals.get(option).getSpecies());
             System.out.println("Breed: " + animals.get(option).getBreed());
             System.out.println("Description: " + animals.get(option).getDescription());
-            System.out.println("Are you sure you want to delete "+ animals.get(option).getName() +"? Yes or No");
+            System.out.println("Are you sure you want to delete " + animals.get(option).getName() + "? Yes or No");
 
             if (scanner.nextLine().equalsIgnoreCase("yes")) {
                 System.out.println("Deleted");
@@ -184,7 +178,7 @@ public class MenuService {
 
         } else if (option < 0 || option > endOfList) {
             System.out.println("That's not a valid animal on your list\n");
-            System.out.println ("Select from 1 to " + endOfList + " on the animal list.");
+            System.out.println("Select from 1 to " + endOfList + " on the animal list.");
             deleteAnimal(service);
         }
     }
@@ -201,6 +195,5 @@ public class MenuService {
             return true;
         }
         return true;
-
     }
 }
