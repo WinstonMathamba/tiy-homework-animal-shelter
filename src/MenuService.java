@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -58,7 +59,7 @@ public class MenuService {
             for (Animal anAnimal : animals) {
                 String name = anAnimal.getName();
                 String species = anAnimal.getSpecies();
-                System.out.printf("%s) %s \t %s\n", x, name, species);
+                System.out.printf("%s) %s\t %s\n", x, name, species);
                 x++;
 
             }
@@ -67,7 +68,10 @@ public class MenuService {
 
     public void createAnimal(AnimalsService service) {
         Scanner scanner = new Scanner(System.in);
-        String name, species, breed, description;
+        String name;
+        String species;
+        String breed;
+        String description;
 
         System.out.println("\n--Create an Animal--");
         System.out.println("\n Please fill in the blanks.");
@@ -97,7 +101,11 @@ public class MenuService {
             description = scanner.nextLine().trim();
         }
 
-        service.createAnimal(name, species, breed, description);
+        try {
+            service.createAnimal(name, species, breed, description);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         System.out.printf("\nSuccess! you added %s to the list of animals.\n", name);
     }
@@ -121,6 +129,10 @@ public class MenuService {
 
     public void editAnimal(AnimalsService service) {
         Scanner scanner = new Scanner(System.in);
+        String name;
+        String species;
+        String breed;
+        String description;
 
         System.out.println("--Edit Animal--\n");
         int option = waitForInt("What is the numeric value of the animal you'd like to edit") - 1;
@@ -129,27 +141,30 @@ public class MenuService {
 
         if ((option <= animals.size() - 1) && option >= 0) {
             System.out.println("\nName: [" + animals.get(option).getName() + "]");
-            String name = scanner.nextLine().trim();
+            name = scanner.nextLine().trim();
             if (!name.isEmpty()) {
                 animals.get(option).setName(name);
             }
             System.out.println("Species: [" + animals.get(option).getSpecies() + "]");
-            String species = scanner.nextLine().trim();
+            species = scanner.nextLine().trim();
             if (!species.isEmpty()) {
                 animals.get(option).setSpecies(species);
             }
             System.out.println("Breed: [" + animals.get(option).getBreed() + "]");
-            String breed = scanner.nextLine().trim();
+            breed = scanner.nextLine().trim();
             if (!breed.isEmpty()) {
                 animals.get(option).setBreed(breed);
             }
             System.out.println("Description: [" + animals.get(option).getDescription() + "]");
-            String description = scanner.nextLine().trim();
+            description = scanner.nextLine().trim();
             if (!description.isEmpty()) {
                 animals.get(option).setDescription(description);
             }
+            service.updateAnimal(name, species, breed, description);
+
         } else if (option < 0 || option > endOfList) {
             System.out.println("Oh Uh! Choose an animal from 1 to " + endOfList + " on the animal list.\n");
+
             editAnimal(service);
         }
     }
@@ -171,7 +186,11 @@ public class MenuService {
 
             if (scanner.nextLine().equalsIgnoreCase("yes")) {
                 System.out.println("Deleted");
-                service.deleteAnimal(option);
+                try {
+                    service.deleteAnimal(option);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             } else if (scanner.nextLine().equalsIgnoreCase("no")) {
                 deleteAnimal(service);
             }
@@ -186,7 +205,6 @@ public class MenuService {
     public boolean quit(AnimalsService service) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\nAre you sure you want to quit (yes or no)?");
-        System.out.println("If you choose 'yes', all of your data will be lost!");
         String input = scanner.nextLine();
         if (input.equalsIgnoreCase("yes")) {
             System.out.println("\nThank You. Goodbye!");

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "sol",
+    "species": "fish",
+    "breed": "clown",
+    "description": "slippery"
+  },
+  {
+    "name": "lyoto",
+    "species": "koi",
+    "breed": "",
+    "description": "stage one dragon"
+  },
+  {
+    "name": "lillian",
+    "species": "dragon",
+    "breed": "",
+    "description": "fiery spirit"
+  },
+  {
+    "name": "laranga",
+    "species": "mountain lion",
+    "breed": "",
+    "description": "wild"
+  },
+  {
+    "name": "simba",
+    "species": "tiger",
+    "breed": "",
+    "description": "stripped"
+  }
+]

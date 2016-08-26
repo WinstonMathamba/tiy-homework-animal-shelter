@@ -1,12 +1,16 @@
+import java.io.IOException;
+
 /**
  * Created by win808mac on 8/19/16.
  */
 public class Main {
 
-    public static void main(String[] args) {
-        AnimalsService service = new AnimalsService();
+    public static void main(String[] args) throws IOException {
+        AnimalRepository animalRepository = new AnimalRepository("animals.json");
+        AnimalsService service = new AnimalsService(animalRepository);
         MenuService menu = new MenuService();
         boolean repeat = true;
+
 
 
         while (repeat) {
