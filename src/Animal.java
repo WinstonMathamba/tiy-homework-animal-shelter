@@ -19,7 +19,6 @@ public class Animal {
 
     public String getName() {
         return name;
-
     }
 
     public void setSpecies(String s) {
@@ -51,7 +50,6 @@ public class Animal {
         this.species = species;
         this.breed = breed;
         this.description = description;
-
     }
 
 }

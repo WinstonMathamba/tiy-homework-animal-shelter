@@ -42,7 +42,7 @@ public class AnimalRepository {
         }
 
         public void updateAnimal(String name, String species, String breed, String description) throws IOException {
-        Animal one = new Animal(name, species, breed, description);
+        new Animal(name, species, breed, description);
         //animals.add(one);
 
             persist();
