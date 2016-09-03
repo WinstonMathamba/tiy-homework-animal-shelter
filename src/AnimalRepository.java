@@ -41,11 +41,16 @@ public class AnimalRepository {
             return animals;
         }
 
-        public void updateAnimal(String name, String species, String breed, String description) throws IOException {
-        new Animal(name, species, breed, description);
-        //animals.add(one);
+        public void updateAnimal(String name, String species, String breed, String description, int index) throws IOException {
+        Animal one = new Animal(name, species, breed, description);
+        animals.add(index, one);
 
             persist();
+
+        }
+
+        public Animal getAnimal(int index) {
+            return animals.get(index);
 
         }
 
@@ -54,11 +59,11 @@ public class AnimalRepository {
             Files.write(filePath, json.getBytes());
         }
 
-
         public void deleteAnimal(int index) throws IOException {
             animals.remove(index);
             persist();
         }
+
 }
 
 

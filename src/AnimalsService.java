@@ -14,7 +14,7 @@ public class AnimalsService {
         this.animalRepository = animalRepository;
     }
 
-    //this is the method to call on when I need the ArrayList of Animals.
+    //this is the method to call on for the ArrayList of Animals.
     public ArrayList<Animal> listAnimals() {
         return animalRepository.listAnimals();
 
@@ -27,13 +27,18 @@ public class AnimalsService {
         animalRepository.createAnimal(one);
     }
 
-    public void updateAnimal(String name, String species, String breed, String description) {
+    public void updateAnimal(String name, String species, String breed, String description, int index) {
         try {
-            animalRepository.updateAnimal(name, species, breed, description);
+            animalRepository.updateAnimal(name, species, breed, description, index);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
+    public Animal getAnimal(int index) {
+        return animalRepository.getAnimal(index);
+    }
+
 
     //this method will delete an Animal from the ArrayList 'animalList'.
     public void deleteAnimal(int index) throws IOException {

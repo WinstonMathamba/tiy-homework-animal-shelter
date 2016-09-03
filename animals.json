@@ -1,11 +1,5 @@
 [
   {
-    "name": "sol",
-    "species": "fish",
-    "breed": "clown",
-    "description": "slippery"
-  },
-  {
     "name": "lyoto",
     "species": "koi",
     "breed": "",
@@ -28,5 +22,17 @@
     "species": "Giraffe",
     "breed": "",
     "description": "tall"
+  },
+  {
+    "name": "lulu",
+    "species": "marlin",
+    "breed": "",
+    "description": "colorful"
+  },
+  {
+    "name": "lulu",
+    "species": "marlin",
+    "breed": "",
+    "description": "colorful"
   }
 ]

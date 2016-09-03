@@ -160,7 +160,7 @@ public class MenuService {
             if (!description.isEmpty()) {
                 animals.get(option).setDescription(description);
             }
-            service.updateAnimal(name, species, breed, description);
+            service.updateAnimal(name, species, breed, description, option);
 
         } else if (option < 0 || option > endOfList) {
             System.out.println("Oh Uh! Choose an animal from 1 to " + endOfList + " on the animal list.\n");
