@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d196da8-b500-47f8-b7ed-a45d8d6e6583" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/AnimalsServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/tiy-homework-animal-shelter/AnimalRepository.class" afterPath="$PROJECT_DIR$/out/production/tiy-homework-animal-shelter/AnimalRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/tiy-homework-animal-shelter/AnimalsService.class" afterPath="$PROJECT_DIR$/out/production/tiy-homework-animal-shelter/AnimalsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/tiy-homework-animal-shelter/MenuService.class" afterPath="$PROJECT_DIR$/out/production/tiy-homework-animal-shelter/MenuService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/animals.json" afterPath="$PROJECT_DIR$/animals.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AnimalRepository.java" afterPath="$PROJECT_DIR$/src/AnimalRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AnimalsService.java" afterPath="$PROJECT_DIR$/src/AnimalsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MenuService.java" afterPath="$PROJECT_DIR$/src/MenuService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/AnimalsServiceTest.java" afterPath="$PROJECT_DIR$/Test/AnimalsServiceTest.java" />
     </list>
     <ignored path="tiy-homework-animal-shelter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,11 +39,9 @@
       <file leaf-file-name="AnimalsServiceTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Test/AnimalsServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-49">
-              <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-874">
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,7 +59,7 @@
       <file leaf-file-name="AnimalsService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AnimalsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="570">
               <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="e#1288#1289#0" expanded="true" />
@@ -92,7 +82,7 @@
       <file leaf-file-name="AnimalRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AnimalRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
+            <state relative-caret-position="292">
               <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
@@ -868,44 +858,44 @@
       <workItem from="1472223459817" duration="549000" />
       <workItem from="1472494870694" duration="10836000" />
       <workItem from="1472827711110" duration="89000" />
-      <workItem from="1472827836951" duration="12167000" />
+      <workItem from="1472827836951" duration="13913000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AnimalsServiceTest - 2016.09.03 at 17h 58m 41s.xml">
+    <history-entry file="AnimalsServiceTest - 2016.09.06 at 14h 14m 36s.xml">
       <configuration name="AnimalsServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AnimalsServiceTest - 2016.09.03 at 17h 59m 11s.xml">
+    <history-entry file="AnimalsServiceTest - 2016.09.06 at 14h 15m 12s.xml">
       <configuration name="AnimalsServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AnimalsServiceTest - 2016.09.03 at 17h 59m 26s.xml">
+    <history-entry file="AnimalsServiceTest - 2016.09.06 at 14h 15m 16s.xml">
       <configuration name="AnimalsServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AnimalsServiceTest - 2016.09.03 at 18h 01m 37s.xml">
+    <history-entry file="AnimalsServiceTest - 2016.09.06 at 14h 16m 32s.xml">
       <configuration name="AnimalsServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AnimalsServiceTest - 2016.09.03 at 18h 01m 58s.xml">
+    <history-entry file="AnimalsServiceTest - 2016.09.06 at 14h 16m 48s.xml">
       <configuration name="AnimalsServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AnimalsServiceTest - 2016.09.03 at 18h 04m 05s.xml">
-      <configuration name="AnimalsServiceTest" configurationId="JUnit" />
+    <history-entry file="AnimalsServiceTest_deleteAnimalTest - 2016.09.06 at 14h 11m 21s.xml">
+      <configuration name="AnimalsServiceTest.deleteAnimalTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AnimalsServiceTest - 2016.09.03 at 18h 04m 30s.xml">
-      <configuration name="AnimalsServiceTest" configurationId="JUnit" />
+    <history-entry file="AnimalsServiceTest_deleteAnimalTest - 2016.09.06 at 14h 11m 36s.xml">
+      <configuration name="AnimalsServiceTest.deleteAnimalTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AnimalsServiceTest - 2016.09.03 at 18h 05m 04s.xml">
-      <configuration name="AnimalsServiceTest" configurationId="JUnit" />
+    <history-entry file="AnimalsServiceTest_deleteAnimalTest - 2016.09.06 at 14h 11m 41s.xml">
+      <configuration name="AnimalsServiceTest.deleteAnimalTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AnimalsServiceTest - 2016.09.03 at 18h 05m 47s.xml">
-      <configuration name="AnimalsServiceTest" configurationId="JUnit" />
+    <history-entry file="AnimalsServiceTest_deleteAnimalTest - 2016.09.06 at 14h 12m 03s.xml">
+      <configuration name="AnimalsServiceTest.deleteAnimalTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AnimalsServiceTest - 2016.09.03 at 18h 12m 09s.xml">
-      <configuration name="AnimalsServiceTest" configurationId="JUnit" />
+    <history-entry file="AnimalsServiceTest_deleteAnimalTest - 2016.09.06 at 14h 12m 10s.xml">
+      <configuration name="AnimalsServiceTest.deleteAnimalTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95916000" />
+    <option name="totallyTimeSpent" value="97662000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
@@ -919,7 +909,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40076825" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40076825" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -953,7 +943,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -976,9 +966,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1156,13 +1144,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="105" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/animals.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-110">
@@ -1197,30 +1178,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AnimalRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AnimalsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#1288#1289#0" expanded="true" />
-            <element signature="e#1344#1345#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1232,13 +1194,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="491" column="0" selection-start-line="491" selection-start-column="0" selection-end-line="491" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AnimalsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#1288#1289#0" expanded="true" />
+            <element signature="e#1344#1345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AnimalRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Test/AnimalsServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-874">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

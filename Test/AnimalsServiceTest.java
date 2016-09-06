@@ -1,7 +1,5 @@
 import org.junit.After;
 import org.junit.Test;
-import org.junit.internal.runners.model.EachTestNotifier;
-
 import java.io.File;
 import java.io.IOException;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -43,7 +41,7 @@ public class AnimalsServiceTest {
         assertThat(service.getAnimal(0).getName(),is(equalTo("ben")));
         assertThat(service.getAnimal(0).getDescription(),is(equalTo("grey")));
     }
-    
+
     @Test
     public void listAnimalTest() throws IOException {
         //Arrange
@@ -60,6 +58,7 @@ public class AnimalsServiceTest {
 //    @Test
 //    public void deleteAnimalTest() throws IOException {
 //        //Arrange
+//        service.createAnimal("Ne");
 //
 //
 //        //Act
