@@ -55,20 +55,20 @@ public class AnimalsServiceTest {
 
     }
 
-//    @Test
-//    public void deleteAnimalTest() throws IOException {
-//        //Arrange
-//        service.createAnimal("Ne");
-//
-//
-//        //Act
-//        service.deleteAnimal(0);
-//        int test = service.listAnimals().size();
-//
-//        //Assert
-//        assertThat(test,equalTo(2));
-//
-//    }
+    @Test
+    public void deleteAnimalTest() throws IOException {
+        //Arrange
+        service.createAnimal("Nemo", "clownfish","","lost");
+
+
+        //Act
+        service.deleteAnimal(0);
+        int test = service.listAnimals().size();
+
+        //Assert
+        assertThat(test,equalTo(0));
+
+    }
 
     @After
     public void clearTestFile() {
